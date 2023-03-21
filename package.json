@@ -1,0 +1,43 @@
+{
+  "name": "coding-test-pt-informatika-media-pratama",
+  "version": "1.0.0",
+  "description": "This is restful api user for coding test PT INFORMATIKA MEDIA PRATAMA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "model:generate:user": "sequelize-cli model:generate --name user --attributes username:string,password:string,fullname:string",
+    "seed:generate:user": "sequelize-cli seed:generate --name user",
+    "migrate:up": "sequelize-cli db:migrate",
+    "migrate:down": "sequelize-cli db:migrate:undo:all",
+    "seed:up": "sequelize-cli db:seed:all",
+    "seed:down": "sequelize-cli db:seed:undo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YadBro/Yadi-Apriyadi-BackEnd-Test-Code.git"
+  },
+  "keywords": [
+    "restful-api",
+    "coding-test"
+  ],
+  "author": "Yadi Apriyadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YadBro/Yadi-Apriyadi-BackEnd-Test-Code/issues"
+  },
+  "homepage": "https://github.com/YadBro/Yadi-Apriyadi-BackEnd-Test-Code#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.29.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "sequelize-cli": "^6.6.0"
+  }
+}
