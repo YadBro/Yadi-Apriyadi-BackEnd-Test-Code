@@ -81,6 +81,8 @@ Itulah tadi untuk mulai menginisialisasi hingga menjalakannya. Ada beberapa note
 2. Ada beberapa command yang saya sediakan, listnya ada di file package.json
 
 ```bash
+npm start // Menjalankan aplikasi server di lingkungan production. (Pastikan NODE_ENV nya juga production)
+npm run dev // Menjalankan aplikasi server di lingkungan development
 npm run model:generate:user // Membuat model dan migration dengan nama user serta attribute (fullname, username, password)
 npm run seed:generate:user // Membuat seeder user
 npm run migrate:up // Menjalankan seluruh migrations
