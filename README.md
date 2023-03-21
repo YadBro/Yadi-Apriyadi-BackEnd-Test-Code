@@ -38,7 +38,7 @@ async up(queryInterface, Sequelize) {
 
 6. Selanjutnya restful api test di postman.
 
-## Tes Resfult Api Melalui Postman
+## Tes Restful Api Melalui Postman
 
 Running app:
 
