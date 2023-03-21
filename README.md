@@ -57,19 +57,19 @@ baseurl = http://localhost:5000/api/v1
 
 - **POST** /auth/signup
 - **POST** /auth/login
-- **GET** /userlist (optional query= page, size)
+- **GET** /user/userlist (optional query= page, size)
 
 examples:
 
 - **POST** http://localhost:5000/api/v1/auth/signup
 - **POST** http://localhost:5000/api/v1/auth/login
-- **GET** http://localhost:5000/api/v1/userlist
+- **GET** http://localhost:5000/api/v1/user/userlist
 
 userlist examples:
 
-- **GET** http://localhost:5000/api/v1/userlist?page=1
-- **GET** http://localhost:5000/api/v1/userlist?size=5
-- **GET** http://localhost:5000/api/v1/userlist?page=1&size=5;
+- **GET** http://localhost:5000/api/v1/user/userlist?page=1
+- **GET** http://localhost:5000/api/v1/user/userlist?size=5
+- **GET** http://localhost:5000/api/v1/user/userlist?page=1&size=5;
 
 ## Kesimpulan
 
@@ -77,7 +77,7 @@ Itulah tadi untuk mulai menginisialisasi hingga menjalakannya. Ada beberapa note
 
 **notes:**
 
-1. Pada endpoint /userlist secara default sudah menggunakan pagination dengan page defaultnya yaitu = 1 dan sizenya yaitu 3.
+1. Pada endpoint /user/userlist secara default sudah menggunakan pagination dengan page defaultnya yaitu = 1 dan sizenya yaitu 3.
 2. Ada beberapa command yang saya sediakan, listnya ada di file package.json
 
 ```bash
